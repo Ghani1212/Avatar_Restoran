@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +88,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R81.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

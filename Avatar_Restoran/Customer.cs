@@ -21,5 +21,10 @@ namespace Avatar_Restoran
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
