@@ -39,10 +39,7 @@ namespace Avatar_Restoran
 
         private void Chasier_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'restoranDataSet2.melayani' table. You can move, or remove it, as needed.
-            this.melayaniTableAdapter.Fill(this.restoranDataSet2.melayani);
-            // TODO: This line of code loads data into the 'restoranDataSet1.mensuplai' table. You can move, or remove it, as needed.
-            this.mensuplaiTableAdapter.Fill(this.restoranDataSet1.mensuplai);
+
 
         }
     }

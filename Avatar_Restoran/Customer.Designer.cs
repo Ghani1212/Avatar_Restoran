@@ -37,14 +37,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.txtIdPelanggan = new System.Windows.Forms.TextBox();
             this.memesanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.restoranDataSet3 = new Avatar_Restoran.restoranDataSet3();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtKodeMenu = new System.Windows.Forms.TextBox();
+            this.txtJumlahPemesanan = new System.Windows.Forms.TextBox();
+            this.txtHarga = new System.Windows.Forms.TextBox();
+            this.txtKodePemesanan = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -52,7 +52,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.kodepemesananDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodemenuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jumlahpesananDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // NAMA
@@ -74,13 +74,11 @@
             this.NAMA.BackColor = System.Drawing.Color.BurlyWood;
             this.NAMA.Font = new System.Drawing.Font("Perpetua Titling MT", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NAMA.ForeColor = System.Drawing.Color.OldLace;
-            this.NAMA.Location = new System.Drawing.Point(298, 20);
-            this.NAMA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NAMA.Location = new System.Drawing.Point(224, 16);
             this.NAMA.Name = "NAMA";
-            this.NAMA.Size = new System.Drawing.Size(471, 32);
+            this.NAMA.Size = new System.Drawing.Size(378, 26);
             this.NAMA.TabIndex = 0;
             this.NAMA.Text = "SILAHKAN PESAN DISINI ヽ(*⌒▽⌒*)ﾉ";
-            this.NAMA.Click += new System.EventHandler(this.NAMA_Click);
             // 
             // label1
             // 
@@ -88,10 +86,9 @@
             this.label1.BackColor = System.Drawing.Color.OldLace;
             this.label1.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(32, 379);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(24, 308);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 38);
+            this.label1.Size = new System.Drawing.Size(179, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kode Pemesanan";
             // 
@@ -101,10 +98,9 @@
             this.label2.BackColor = System.Drawing.Color.OldLace;
             this.label2.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Brown;
-            this.label2.Location = new System.Drawing.Point(628, 376);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(471, 306);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 38);
+            this.label2.Size = new System.Drawing.Size(128, 31);
             this.label2.TabIndex = 2;
             this.label2.Text = "Kode Menu";
             // 
@@ -114,10 +110,9 @@
             this.label4.BackColor = System.Drawing.Color.OldLace;
             this.label4.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Brown;
-            this.label4.Location = new System.Drawing.Point(32, 437);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(24, 355);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(239, 38);
+            this.label4.Size = new System.Drawing.Size(195, 31);
             this.label4.TabIndex = 4;
             this.label4.Text = "Jumlah Pemesanan";
             // 
@@ -127,10 +122,9 @@
             this.label5.BackColor = System.Drawing.Color.OldLace;
             this.label5.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(628, 321);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(471, 261);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 38);
+            this.label5.Size = new System.Drawing.Size(142, 31);
             this.label5.TabIndex = 5;
             this.label5.Text = "ID Pelanggan";
             // 
@@ -140,10 +134,9 @@
             this.label6.BackColor = System.Drawing.Color.OldLace;
             this.label6.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Brown;
-            this.label6.Location = new System.Drawing.Point(32, 317);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(24, 258);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 38);
+            this.label6.Size = new System.Drawing.Size(72, 31);
             this.label6.TabIndex = 6;
             this.label6.Text = "Harga";
             // 
@@ -153,35 +146,31 @@
             this.label7.BackColor = System.Drawing.Color.OldLace;
             this.label7.Font = new System.Drawing.Font("Perpetua", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Maroon;
-            this.label7.Location = new System.Drawing.Point(180, 71);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(135, 58);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(228, 35);
+            this.label7.Size = new System.Drawing.Size(183, 28);
             this.label7.TabIndex = 7;
             this.label7.Text = "Tanggal Pemesanan";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.OldLace;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Perpetua", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(430, 68);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(410, 42);
-            this.dateTimePicker1.TabIndex = 8;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateTimePicker.CalendarForeColor = System.Drawing.Color.DarkRed;
+            this.dateTimePicker.CalendarMonthBackground = System.Drawing.Color.OldLace;
+            this.dateTimePicker.Font = new System.Drawing.Font("Perpetua", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker.Location = new System.Drawing.Point(322, 55);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(308, 35);
+            this.dateTimePicker.TabIndex = 8;
+            this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // textBox1
+            // txtIdPelanggan
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "id_pelanggan", true));
-            this.textBox1.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(824, 318);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 45);
-            this.textBox1.TabIndex = 9;
+            this.txtIdPelanggan.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "id_pelanggan", true));
+            this.txtIdPelanggan.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdPelanggan.Location = new System.Drawing.Point(618, 258);
+            this.txtIdPelanggan.Name = "txtIdPelanggan";
+            this.txtIdPelanggan.Size = new System.Drawing.Size(170, 38);
+            this.txtIdPelanggan.TabIndex = 9;
             // 
             // memesanBindingSource
             // 
@@ -193,132 +182,137 @@
             this.restoranDataSet3.DataSetName = "restoranDataSet3";
             this.restoranDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox3
+            // txtKodeMenu
             // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "kode_menu", true));
-            this.textBox3.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(805, 372);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(245, 45);
-            this.textBox3.TabIndex = 17;
+            this.txtKodeMenu.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "kode_menu", true));
+            this.txtKodeMenu.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKodeMenu.Location = new System.Drawing.Point(604, 302);
+            this.txtKodeMenu.Name = "txtKodeMenu";
+            this.txtKodeMenu.Size = new System.Drawing.Size(185, 38);
+            this.txtKodeMenu.TabIndex = 17;
             // 
-            // textBox4
+            // txtJumlahPemesanan
             // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "jumlah_pesanan", true));
-            this.textBox4.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(290, 433);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(245, 45);
-            this.textBox4.TabIndex = 18;
+            this.txtJumlahPemesanan.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "jumlah_pesanan", true));
+            this.txtJumlahPemesanan.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJumlahPemesanan.Location = new System.Drawing.Point(218, 352);
+            this.txtJumlahPemesanan.Name = "txtJumlahPemesanan";
+            this.txtJumlahPemesanan.Size = new System.Drawing.Size(185, 38);
+            this.txtJumlahPemesanan.TabIndex = 18;
             // 
-            // textBox5
+            // txtHarga
             // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "harga", true));
-            this.textBox5.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(138, 314);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(245, 45);
-            this.textBox5.TabIndex = 19;
+            this.txtHarga.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "harga", true));
+            this.txtHarga.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHarga.Location = new System.Drawing.Point(104, 255);
+            this.txtHarga.Name = "txtHarga";
+            this.txtHarga.Size = new System.Drawing.Size(185, 38);
+            this.txtHarga.TabIndex = 19;
             // 
-            // textBox2
+            // txtKodePemesanan
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Snow;
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "kode_pemesanan", true));
-            this.textBox2.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(273, 377);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 45);
-            this.textBox2.TabIndex = 20;
+            this.txtKodePemesanan.BackColor = System.Drawing.Color.Snow;
+            this.txtKodePemesanan.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memesanBindingSource, "kode_pemesanan", true));
+            this.txtKodePemesanan.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKodePemesanan.Location = new System.Drawing.Point(205, 306);
+            this.txtKodePemesanan.Name = "txtKodePemesanan";
+            this.txtKodePemesanan.Size = new System.Drawing.Size(127, 38);
+            this.txtKodePemesanan.TabIndex = 20;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-6, -142);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -115);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(616, 721);
+            this.pictureBox1.Size = new System.Drawing.Size(462, 586);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(594, -182);
+            this.pictureBox2.Location = new System.Drawing.Point(446, -148);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(616, 478);
+            this.pictureBox2.Size = new System.Drawing.Size(462, 388);
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(492, -47);
+            this.pictureBox3.Location = new System.Drawing.Point(369, -38);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(878, 615);
+            this.pictureBox3.Size = new System.Drawing.Size(658, 500);
             this.pictureBox3.TabIndex = 16;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(694, 437);
+            this.button1.Location = new System.Drawing.Point(520, 355);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 21;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(805, 470);
+            this.button2.Location = new System.Drawing.Point(604, 382);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 22;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(892, 428);
+            this.button3.Location = new System.Drawing.Point(669, 348);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(56, 19);
             this.button3.TabIndex = 23;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(980, 470);
+            this.button4.Location = new System.Drawing.Point(735, 382);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(56, 19);
             this.button4.TabIndex = 24;
             this.button4.Text = "Delete";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.OldLace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView.AutoGenerateColumns = false;
+            this.dataGridView.BackgroundColor = System.Drawing.Color.OldLace;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kodepemesananDataGridViewTextBoxColumn,
             this.kodemenuDataGridViewTextBoxColumn,
             this.jumlahpesananDataGridViewTextBoxColumn,
             this.idpelangganDataGridViewTextBoxColumn,
             this.tglpemesananDataGridViewTextBoxColumn,
             this.hargaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.memesanBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(113, 126);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(794, 170);
-            this.dataGridView1.TabIndex = 25;
+            this.dataGridView.DataSource = this.memesanBindingSource;
+            this.dataGridView.Location = new System.Drawing.Point(85, 102);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.RowTemplate.Height = 24;
+            this.dataGridView.Size = new System.Drawing.Size(596, 138);
+            this.dataGridView.TabIndex = 25;
             // 
             // kodepemesananDataGridViewTextBoxColumn
             // 
@@ -374,20 +368,20 @@
             // 
             // Customer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtKodePemesanan);
+            this.Controls.Add(this.txtHarga);
+            this.Controls.Add(this.txtJumlahPemesanan);
+            this.Controls.Add(this.txtKodeMenu);
+            this.Controls.Add(this.txtIdPelanggan);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -398,7 +392,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Customer";
             this.Text = "Customer";
             this.Load += new System.EventHandler(this.Customer_Load);
@@ -407,7 +400,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,20 +415,20 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.TextBox txtIdPelanggan;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtKodeMenu;
+        private System.Windows.Forms.TextBox txtJumlahPemesanan;
+        private System.Windows.Forms.TextBox txtHarga;
+        private System.Windows.Forms.TextBox txtKodePemesanan;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView;
         private restoranDataSet3 restoranDataSet3;
         private System.Windows.Forms.BindingSource memesanBindingSource;
         private restoranDataSet3TableAdapters.memesanTableAdapter memesanTableAdapter;

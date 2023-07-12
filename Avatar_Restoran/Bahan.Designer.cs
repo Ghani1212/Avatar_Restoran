@@ -37,37 +37,39 @@ namespace Avatar_Restoran
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.restoranDataSet4 = new Avatar_Restoran.restoranDataSet4();
-            this.bahanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bahanTableAdapter = new Avatar_Restoran.restoranDataSet4TableAdapters.bahanTableAdapter();
             this.kodebahanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namabahanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stockbahanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bahanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restoranDataSet4 = new Avatar_Restoran.restoranDataSet4();
+            this.bahanTableAdapter = new Avatar_Restoran.restoranDataSet4TableAdapters.bahanTableAdapter();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bahanBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-14, -370);
+            this.pictureBox1.Location = new System.Drawing.Point(-10, -301);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(530, 888);
+            this.pictureBox1.Size = new System.Drawing.Size(398, 722);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(459, -59);
+            this.pictureBox3.Location = new System.Drawing.Point(344, -48);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(527, 577);
+            this.pictureBox3.Size = new System.Drawing.Size(395, 469);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
@@ -75,9 +77,10 @@ namespace Avatar_Restoran
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Perpetua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(209, 237);
+            this.label1.Location = new System.Drawing.Point(157, 193);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 31);
+            this.label1.Size = new System.Drawing.Size(123, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Kode Bahan  :";
             // 
@@ -85,9 +88,10 @@ namespace Avatar_Restoran
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Perpetua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(209, 310);
+            this.label2.Location = new System.Drawing.Point(157, 252);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 31);
+            this.label2.Size = new System.Drawing.Size(122, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Nama Bahan :";
             // 
@@ -95,9 +99,10 @@ namespace Avatar_Restoran
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Perpetua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(209, 377);
+            this.label3.Location = new System.Drawing.Point(157, 306);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 31);
+            this.label3.Size = new System.Drawing.Size(118, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Stock Bahan :";
             // 
@@ -111,26 +116,13 @@ namespace Avatar_Restoran
             this.namabahanDataGridViewTextBoxColumn,
             this.stockbahanDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.bahanBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(256, 42);
+            this.dataGridView1.Location = new System.Drawing.Point(192, 34);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(427, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(383, 122);
             this.dataGridView1.TabIndex = 6;
-            // 
-            // restoranDataSet4
-            // 
-            this.restoranDataSet4.DataSetName = "restoranDataSet4";
-            this.restoranDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bahanBindingSource
-            // 
-            this.bahanBindingSource.DataMember = "bahan";
-            this.bahanBindingSource.DataSource = this.restoranDataSet4;
-            // 
-            // bahanTableAdapter
-            // 
-            this.bahanTableAdapter.ClearBeforeFill = true;
             // 
             // kodebahanDataGridViewTextBoxColumn
             // 
@@ -156,34 +148,51 @@ namespace Avatar_Restoran
             this.stockbahanDataGridViewTextBoxColumn.Name = "stockbahanDataGridViewTextBoxColumn";
             this.stockbahanDataGridViewTextBoxColumn.Width = 125;
             // 
+            // bahanBindingSource
+            // 
+            this.bahanBindingSource.DataMember = "bahan";
+            this.bahanBindingSource.DataSource = this.restoranDataSet4;
+            // 
+            // restoranDataSet4
+            // 
+            this.restoranDataSet4.DataSetName = "restoranDataSet4";
+            this.restoranDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bahanTableAdapter
+            // 
+            this.bahanTableAdapter.ClearBeforeFill = true;
+            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(378, 233);
+            this.textBox1.Location = new System.Drawing.Point(284, 189);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(338, 38);
+            this.textBox1.Size = new System.Drawing.Size(254, 32);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(378, 307);
+            this.textBox2.Location = new System.Drawing.Point(284, 249);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(338, 38);
+            this.textBox2.Size = new System.Drawing.Size(254, 32);
             this.textBox2.TabIndex = 8;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(389, 377);
+            this.textBox3.Location = new System.Drawing.Point(292, 306);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 22);
+            this.textBox3.Size = new System.Drawing.Size(140, 20);
             this.textBox3.TabIndex = 9;
             // 
             // Bahan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 502);
+            this.ClientSize = new System.Drawing.Size(717, 408);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -193,14 +202,15 @@ namespace Avatar_Restoran
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Bahan";
             this.Text = "Bahan";
             this.Load += new System.EventHandler(this.Bahan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bahanBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

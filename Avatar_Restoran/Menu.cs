@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace Avatar_Restoran
 {
     public partial class Menu : Form
     {
+        private string stringConnection = "data source=LAPTOP-3GHBBCII\\GHANIZUMAR;" + "database=restoran;User ID=sa;Password=ghani1211";
+        private SqlConnection koneksi;
         public Menu()
         {
             InitializeComponent();
@@ -19,8 +22,7 @@ namespace Avatar_Restoran
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'restoranDataSet.menu' table. You can move, or remove it, as needed.
-            this.menuTableAdapter.Fill(this.restoranDataSet.menu);
+
 
         }
 
