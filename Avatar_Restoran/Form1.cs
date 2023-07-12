@@ -26,5 +26,10 @@ namespace Avatar_Restoran
         {
 
         }
+
+        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
