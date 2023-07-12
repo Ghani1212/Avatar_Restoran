@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             this.NAMA = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,6 +39,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.memesanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restoranDataSet3 = new Avatar_Restoran.restoranDataSet3();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -50,21 +53,19 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.restoranDataSet3 = new Avatar_Restoran.restoranDataSet3();
-            this.memesanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.memesanTableAdapter = new Avatar_Restoran.restoranDataSet3TableAdapters.memesanTableAdapter();
             this.kodepemesananDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodemenuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jumlahpesananDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idpelangganDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tglpemesananDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hargaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.memesanTableAdapter = new Avatar_Restoran.restoranDataSet3TableAdapters.memesanTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.memesanBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memesanBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // NAMA
@@ -126,7 +127,7 @@
             this.label5.BackColor = System.Drawing.Color.OldLace;
             this.label5.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(627, 321);
+            this.label5.Location = new System.Drawing.Point(628, 321);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(175, 38);
@@ -170,6 +171,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(410, 42);
             this.dateTimePicker1.TabIndex = 8;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // textBox1
             // 
@@ -180,6 +182,16 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(226, 45);
             this.textBox1.TabIndex = 9;
+            // 
+            // memesanBindingSource
+            // 
+            this.memesanBindingSource.DataMember = "memesan";
+            this.memesanBindingSource.DataSource = this.restoranDataSet3;
+            // 
+            // restoranDataSet3
+            // 
+            this.restoranDataSet3.DataSetName = "restoranDataSet3";
+            this.restoranDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox3
             // 
@@ -224,17 +236,18 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Avatar_Restoran.Properties.Resources.R11;
-            this.pictureBox1.Location = new System.Drawing.Point(-57, -97);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -142);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(662, 721);
+            this.pictureBox1.Size = new System.Drawing.Size(616, 721);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Avatar_Restoran.Properties.Resources.R12;
-            this.pictureBox2.Location = new System.Drawing.Point(593, -167);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(594, -182);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(616, 478);
             this.pictureBox2.TabIndex = 15;
@@ -243,8 +256,8 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Avatar_Restoran.Properties.Resources.R81;
-            this.pictureBox3.Location = new System.Drawing.Point(491, -62);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(492, -47);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(878, 615);
             this.pictureBox3.TabIndex = 16;
@@ -300,26 +313,12 @@
             this.tglpemesananDataGridViewTextBoxColumn,
             this.hargaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.memesanBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(120, 126);
+            this.dataGridView1.Location = new System.Drawing.Point(113, 126);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(794, 170);
             this.dataGridView1.TabIndex = 25;
-            // 
-            // restoranDataSet3
-            // 
-            this.restoranDataSet3.DataSetName = "restoranDataSet3";
-            this.restoranDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // memesanBindingSource
-            // 
-            this.memesanBindingSource.DataMember = "memesan";
-            this.memesanBindingSource.DataSource = this.restoranDataSet3;
-            // 
-            // memesanTableAdapter
-            // 
-            this.memesanTableAdapter.ClearBeforeFill = true;
             // 
             // kodepemesananDataGridViewTextBoxColumn
             // 
@@ -369,6 +368,10 @@
             this.hargaDataGridViewTextBoxColumn.Name = "hargaDataGridViewTextBoxColumn";
             this.hargaDataGridViewTextBoxColumn.Width = 125;
             // 
+            // memesanTableAdapter
+            // 
+            this.memesanTableAdapter.ClearBeforeFill = true;
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -399,12 +402,12 @@
             this.Name = "Customer";
             this.Text = "Customer";
             this.Load += new System.EventHandler(this.Customer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.memesanBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memesanBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

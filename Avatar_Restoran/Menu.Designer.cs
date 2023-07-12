@@ -30,14 +30,15 @@ namespace Avatar_Restoran
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.restoranDataSet = new Avatar_Restoran.restoranDataSet();
-            this.menuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.menuTableAdapter = new Avatar_Restoran.restoranDataSetTableAdapters.menuTableAdapter();
             this.kodemenuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namamenuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stokmenuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hargamenuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restoranDataSet = new Avatar_Restoran.restoranDataSet();
+            this.menuTableAdapter = new Avatar_Restoran.restoranDataSetTableAdapters.menuTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,8 +59,8 @@ namespace Avatar_Restoran
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -86,20 +87,6 @@ namespace Avatar_Restoran
             this.dataGridView1.Size = new System.Drawing.Size(551, 256);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // restoranDataSet
-            // 
-            this.restoranDataSet.DataSetName = "restoranDataSet";
-            this.restoranDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // menuBindingSource
-            // 
-            this.menuBindingSource.DataMember = "menu";
-            this.menuBindingSource.DataSource = this.restoranDataSet;
-            // 
-            // menuTableAdapter
-            // 
-            this.menuTableAdapter.ClearBeforeFill = true;
             // 
             // kodemenuDataGridViewTextBoxColumn
             // 
@@ -132,6 +119,20 @@ namespace Avatar_Restoran
             this.hargamenuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hargamenuDataGridViewTextBoxColumn.Name = "hargamenuDataGridViewTextBoxColumn";
             this.hargamenuDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // menuBindingSource
+            // 
+            this.menuBindingSource.DataMember = "menu";
+            this.menuBindingSource.DataSource = this.restoranDataSet;
+            // 
+            // restoranDataSet
+            // 
+            this.restoranDataSet.DataSetName = "restoranDataSet";
+            this.restoranDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // menuTableAdapter
+            // 
+            this.menuTableAdapter.ClearBeforeFill = true;
             // 
             // label1
             // 
@@ -248,7 +249,7 @@ namespace Avatar_Restoran
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Avatar_Restoran.Properties.Resources.r1;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-6, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(644, 408);
@@ -257,7 +258,6 @@ namespace Avatar_Restoran
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Avatar_Restoran.Properties.Resources.r1;
             this.pictureBox2.Location = new System.Drawing.Point(556, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(560, 400);
@@ -266,7 +266,6 @@ namespace Avatar_Restoran
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Avatar_Restoran.Properties.Resources.r1;
             this.pictureBox3.Location = new System.Drawing.Point(-6, 388);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(570, 316);
@@ -275,7 +274,6 @@ namespace Avatar_Restoran
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Avatar_Restoran.Properties.Resources.r1;
             this.pictureBox4.Location = new System.Drawing.Point(556, 387);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(560, 321);
@@ -284,7 +282,6 @@ namespace Avatar_Restoran
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Avatar_Restoran.Properties.Resources.r1;
             this.pictureBox5.Location = new System.Drawing.Point(1103, 0);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 387);
@@ -293,7 +290,6 @@ namespace Avatar_Restoran
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Avatar_Restoran.Properties.Resources.r1;
             this.pictureBox6.Location = new System.Drawing.Point(1103, 374);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 304);
@@ -330,8 +326,8 @@ namespace Avatar_Restoran
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

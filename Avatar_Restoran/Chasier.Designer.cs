@@ -30,37 +30,38 @@ namespace Avatar_Restoran
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chasier));
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.melayaniBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restoranDataSet2 = new Avatar_Restoran.restoranDataSet2();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.restoranDataSet1 = new Avatar_Restoran.restoranDataSet1();
-            this.mensuplaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mensuplaiTableAdapter = new Avatar_Restoran.restoranDataSet1TableAdapters.mensuplaiTableAdapter();
-            this.restoranDataSet2 = new Avatar_Restoran.restoranDataSet2();
-            this.melayaniBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.melayaniTableAdapter = new Avatar_Restoran.restoranDataSet2TableAdapters.melayaniTableAdapter();
             this.idkasirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idpelangganDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodepemesananDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hargaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.restoranDataSet1 = new Avatar_Restoran.restoranDataSet1();
+            this.mensuplaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mensuplaiTableAdapter = new Avatar_Restoran.restoranDataSet1TableAdapters.mensuplaiTableAdapter();
+            this.melayaniTableAdapter = new Avatar_Restoran.restoranDataSet2TableAdapters.melayaniTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.melayaniBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mensuplaiBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.melayaniBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -79,7 +80,7 @@ namespace Avatar_Restoran
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Avatar_Restoran.Properties.Resources.r13;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(526, -4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(663, 721);
@@ -138,6 +139,16 @@ namespace Avatar_Restoran
             this.textBox3.Size = new System.Drawing.Size(220, 45);
             this.textBox3.TabIndex = 19;
             // 
+            // melayaniBindingSource
+            // 
+            this.melayaniBindingSource.DataMember = "melayani";
+            this.melayaniBindingSource.DataSource = this.restoranDataSet2;
+            // 
+            // restoranDataSet2
+            // 
+            this.restoranDataSet2.DataSetName = "restoranDataSet2";
+            this.restoranDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.melayaniBindingSource, "harga", true));
@@ -186,34 +197,6 @@ namespace Avatar_Restoran
             this.dataGridView1.Size = new System.Drawing.Size(514, 208);
             this.dataGridView1.TabIndex = 23;
             // 
-            // restoranDataSet1
-            // 
-            this.restoranDataSet1.DataSetName = "restoranDataSet1";
-            this.restoranDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mensuplaiBindingSource
-            // 
-            this.mensuplaiBindingSource.DataMember = "mensuplai";
-            this.mensuplaiBindingSource.DataSource = this.restoranDataSet1;
-            // 
-            // mensuplaiTableAdapter
-            // 
-            this.mensuplaiTableAdapter.ClearBeforeFill = true;
-            // 
-            // restoranDataSet2
-            // 
-            this.restoranDataSet2.DataSetName = "restoranDataSet2";
-            this.restoranDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // melayaniBindingSource
-            // 
-            this.melayaniBindingSource.DataMember = "melayani";
-            this.melayaniBindingSource.DataSource = this.restoranDataSet2;
-            // 
-            // melayaniTableAdapter
-            // 
-            this.melayaniTableAdapter.ClearBeforeFill = true;
-            // 
             // idkasirDataGridViewTextBoxColumn
             // 
             this.idkasirDataGridViewTextBoxColumn.DataPropertyName = "id_kasir";
@@ -245,6 +228,24 @@ namespace Avatar_Restoran
             this.hargaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hargaDataGridViewTextBoxColumn.Name = "hargaDataGridViewTextBoxColumn";
             this.hargaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // restoranDataSet1
+            // 
+            this.restoranDataSet1.DataSetName = "restoranDataSet1";
+            this.restoranDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mensuplaiBindingSource
+            // 
+            this.mensuplaiBindingSource.DataMember = "mensuplai";
+            this.mensuplaiBindingSource.DataSource = this.restoranDataSet1;
+            // 
+            // mensuplaiTableAdapter
+            // 
+            this.mensuplaiTableAdapter.ClearBeforeFill = true;
+            // 
+            // melayaniTableAdapter
+            // 
+            this.melayaniTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -316,11 +317,11 @@ namespace Avatar_Restoran
             this.Text = "Chasier";
             this.Load += new System.EventHandler(this.Chasier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.melayaniBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mensuplaiBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.melayaniBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
