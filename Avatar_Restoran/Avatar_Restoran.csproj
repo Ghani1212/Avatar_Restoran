@@ -88,10 +88,80 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>restoranDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="restoranDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet19.xsd</DependentUpon>
+    </Compile>
     <Compile Include="restoranDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>restoranDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet23.xsd</DependentUpon>
     </Compile>
     <Compile Include="restoranDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -102,6 +172,31 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>restoranDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restoranDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restoranDataSet9.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Bahan.resx">
       <DependentUpon>Bahan.cs</DependentUpon>
@@ -153,6 +248,116 @@
     <None Include="restoranDataSet1.xss">
       <DependentUpon>restoranDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="restoranDataSet10.xsc">
+      <DependentUpon>restoranDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet10.xss">
+      <DependentUpon>restoranDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet11.xsc">
+      <DependentUpon>restoranDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet11.xss">
+      <DependentUpon>restoranDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet12.xsc">
+      <DependentUpon>restoranDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet12.xss">
+      <DependentUpon>restoranDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet13.xsc">
+      <DependentUpon>restoranDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet13.xss">
+      <DependentUpon>restoranDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet14.xsc">
+      <DependentUpon>restoranDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet14.xss">
+      <DependentUpon>restoranDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet15.xsc">
+      <DependentUpon>restoranDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet15.xss">
+      <DependentUpon>restoranDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet16.xsc">
+      <DependentUpon>restoranDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet16.xss">
+      <DependentUpon>restoranDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet17.xsc">
+      <DependentUpon>restoranDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet17.xss">
+      <DependentUpon>restoranDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet18.xsc">
+      <DependentUpon>restoranDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet18.xss">
+      <DependentUpon>restoranDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet19.xsc">
+      <DependentUpon>restoranDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet19.xss">
+      <DependentUpon>restoranDataSet19.xsd</DependentUpon>
+    </None>
     <None Include="restoranDataSet2.xsc">
       <DependentUpon>restoranDataSet2.xsd</DependentUpon>
     </None>
@@ -163,6 +368,50 @@
     </None>
     <None Include="restoranDataSet2.xss">
       <DependentUpon>restoranDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet20.xsc">
+      <DependentUpon>restoranDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet20.xss">
+      <DependentUpon>restoranDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet21.xsc">
+      <DependentUpon>restoranDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet21.xss">
+      <DependentUpon>restoranDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet22.xsc">
+      <DependentUpon>restoranDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet22.xss">
+      <DependentUpon>restoranDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet23.xsc">
+      <DependentUpon>restoranDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet23.xss">
+      <DependentUpon>restoranDataSet23.xsd</DependentUpon>
     </None>
     <None Include="restoranDataSet3.xsc">
       <DependentUpon>restoranDataSet3.xsd</DependentUpon>
@@ -185,6 +434,61 @@
     </None>
     <None Include="restoranDataSet4.xss">
       <DependentUpon>restoranDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet5.xsc">
+      <DependentUpon>restoranDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet5.xss">
+      <DependentUpon>restoranDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet6.xsc">
+      <DependentUpon>restoranDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet6.xss">
+      <DependentUpon>restoranDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet7.xsc">
+      <DependentUpon>restoranDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet7.xss">
+      <DependentUpon>restoranDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet8.xsc">
+      <DependentUpon>restoranDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet8.xss">
+      <DependentUpon>restoranDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet9.xsc">
+      <DependentUpon>restoranDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="restoranDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restoranDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restoranDataSet9.xss">
+      <DependentUpon>restoranDataSet9.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

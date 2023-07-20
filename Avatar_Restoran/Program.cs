@@ -16,6 +16,8 @@ namespace Avatar_Restoran
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // Ubah kode berikut untuk mengakses form Customer (ganti Form1 dengan Customer)
             Application.Run(new Form1());
         }
     }
